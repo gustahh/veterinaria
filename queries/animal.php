@@ -11,20 +11,24 @@ if ($result = $mysqli->query($query)) {
     ?>
 
     <div id="conteudo">
-        <h1 class="text-xl font-bold text-zinc-200 dark:text-zinc-200">
-            <?php echo $animal ?>
-        </h1>
+        <h1 class="text-xl font-bold text-neutral-900 dark:text-zinc-200">
+            Ficha de animal
+        </h1>   
             <?php
             while ($linha = $result->fetch_assoc()) {
                 ?>
-                    <div class="w-64 h-64 rounded-full overflow-hidden">
+                    <div class="w-64 h-64 mt-3 rounded-full overflow-hidden float-left">
                         <img src="/veterinaria/img/<?php echo $linha['foto'] ?>" alt="">
                     </div>
+                    <span class="text-3xl font-bold text-neutral-900 dark:text-zinc-200 float-left m-3">
+                        <?php echo $linha['nome']?>
+                    </span>
+
                 <?php
             }
             $result->free();
             ?>
-        </table>
+            <a href="../pages/editarAnimal.php?animal=<?php echo $animal ?>"><button>Editar animal</button></a>
     </div>
     <?php
 } else {

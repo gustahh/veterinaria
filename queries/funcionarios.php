@@ -10,7 +10,7 @@ if ($result = $mysqli->query($query)) {
     ?>
 
     <div>
-        <h1 class="text-xl font-bold text-zinc-200 dark:text-zinc-200">Funcionários</h1>
+        <h1 class="text-xl font-bold text-neutral-900 dark:text-zinc-200">Funcionários</h1>
         <table border="1">
             <tr class="border-b-2 border-zinc-700">
                 <td class="font-bold dark:text-neutral-900 dark:text-zinc-200">

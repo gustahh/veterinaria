@@ -17,7 +17,7 @@ include_once('../database/conexao.php');
     <?php include_once('../content/header.php') ?>
     <?php include_once('../content/barraLateral.php') ?>
     <div class="w-[75%] h-dvh bg-zinc-200 float-right dark:bg-neutral-900">
-        <?php include_once('../queries/clientes.php') ?>
+        <?php include_once ('../queries/editarAnimal.php') ?>
     </div>
 </body>
 </html>

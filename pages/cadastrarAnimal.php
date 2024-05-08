@@ -98,7 +98,7 @@ include_once ('../database/conexao.php');
             image/jpeg" onchange="displayFileName()">
             <div id="file-name" class="mt-2 text-neutral-900 dark:text-zinc-500"></div>
             <button type="submit" class="w-48 h-10 bg-neutral-900 rounded-md p-3 mt-3 dark:bg-zinc-200
-    flex items-center justify-center cursor-pointer font-bold">Cadastrar</button>
+    flex items-center justify-center cursor-pointer font-bold">Cadastrar</button>   
         </form>
     </div>
 </body>
