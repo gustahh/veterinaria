@@ -1,6 +1,6 @@
 <?php 
     $parametro = filter_input(INPUT_GET, "parametro");
-    $mysqli = new mysqli("localhost", "root", "unisuam123", "veterinaria");
+    $mysqli = new mysqli("localhost", "root", "vasco1898", "veterinaria"); //unisuam123
     
     // Verifica a conexão
     if ($mysqli->connect_errno) {

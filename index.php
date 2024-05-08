@@ -1,5 +1,5 @@
 <?php
-include('database/conexao.php');
+include_once('database/conexao.php');
 
 ?>
 <!DOCTYPE html>
@@ -8,14 +8,18 @@ include('database/conexao.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Funcionarios</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/veterinaria/src/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Veterinária</title>
 </head>
 <body>
-    <?php include('paginas/funcionarios.php'); ?>
-    <hr>
-    <?php include('paginas/clientes.php'); ?>
-    <hr>
-    <?php include('paginas/animais.php'); ?>
+    <?php include_once('content/header.php') ?>
+    <?php include_once('content/barraLateral.php') ?>
+    <div class="w-[75%] h-dvh bg-zinc-200 float-right dark:bg-neutral-900">
+
+    </div>
 </body>
 </html>
 
